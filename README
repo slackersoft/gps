@@ -1,1 +1,9 @@
-This is just a really basic script to allow for less typing when wanting to search through output from the `ps' command
+This is just a really basic script to allow for less typing when wanting to search through output from the `ps' command. So, instead of running `ps -ef | grep foo' you can just run `gps foo' and get basically the same output. The output will be different from the longer command in the following ways:
+
+* gps will attempt to make sure the column headers show up in the results
+* gps will attempt to hide itself from the output
+* gps uses some explicit columns for the output from ps so the actual columns available will be different than either `ps -ef' or `ps aux'
+
+Currently the columns that gps is using are:
+
+USER       PID  PPID     STIME   TT  STAT COMMAND
