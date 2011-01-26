@@ -7,3 +7,8 @@ This is just a really basic script to allow for less typing when wanting to sear
 Currently the columns that gps is using are:
 
 USER       PID  PPID     STIME   TT  STAT COMMAND
+
+
+== License
+
+MIT License
