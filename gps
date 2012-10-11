@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -ewwo "user,pid,ppid,stime,tt,stat,command" | grep -v grep | grep -v gps | grep "\(STIME\|$1\)"
+ps -ewwo "user,pid,ppid,stime,tt,stat,command" | grep -v grep | grep -v gps | grep -v stime,tt,stat | grep --color=auto -i "\(STIME\|$1\)"
